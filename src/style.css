@@ -1,0 +1,92 @@
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+
+.app{
+    width: 100%;
+    max-width:540px;
+    background: #fff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 50PX;    
+}
+
+.app h2{
+    color:rgb(173, 0, 0);
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.add{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-weight: 15px;
+}
+
+button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background:rgb(173, 0, 0);
+    color:#fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 5px 8px 5px 10px ;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    padding-right: 60px;
+}
+
+ul li.done{
+    color: rgb(204, 203, 203);
+    text-decoration: line-through;
+}
+
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    color: rgb(173, 0, 0);;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+ul li span:hover{
+    background: #edeef0;
+}
+
+
+
+
+
