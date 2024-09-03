@@ -20,7 +20,6 @@ function addTask() {
 }
 
 
-
 listContainer?.addEventListener("click", function(e) {
     const target = e.target as HTMLElement;
 
@@ -30,3 +29,5 @@ listContainer?.addEventListener("click", function(e) {
         target.parentElement?.remove();
     }
 }, false);
+
+
