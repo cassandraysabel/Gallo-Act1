@@ -60,7 +60,7 @@ ul li{
     user-select: none;
     cursor: pointer;
     position: relative;
-    padding-right: 60px;
+    padding-right: 25px;
 }
 
 ul li.done{
@@ -68,9 +68,17 @@ ul li.done{
     text-decoration: line-through;
 }
 
-ul li span{
+ul li span.date-time {
+    font-weight: bold;
+}
+
+ul li span.date-time.expired{
+    color:rgb(173, 0, 0);
+}
+
+ul li span.delete{
     position: absolute;
-    right: 0;
+    right: 2px;
     top: 50%;
     transform: translateY(-50%);
     width: 30px;
@@ -86,6 +94,10 @@ ul li span{
 ul li span:hover{
     background: #edeef0;
 }
+
+
+
+
 
 
 

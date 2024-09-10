@@ -7,16 +7,28 @@
   <title>TO DO LIST ACT1</title>
 </head>
 <body>
+
   <div class="container">
     <div class="app">
       <h1>to-do ⋆ ˚｡⋆౨ৎ˚</h1>
+
       <div class="add">
         <input type="text" id="enter-task" placeholder="Enter a task">
-        <button onclick="addTask()">add</button>
+        <input type="datetime-local" id="task-datetime">        
+        <button onclick="displayTask()">add</button>
+      </div>
+      <div class="sorting">
+        <label for="sorting-tasks">Sort by:</label>
+        <select id="sorting-options" onchange="sortTask()">
+          <option value="default">Default</option>
+          <option value="date-due">Date due</option>
+        </select>
       </div>
       <ul id="list-container"></ul>
+
     </div>
-  </div>  
+  </div> 
+
   <script src="./src/main.ts"></script>
 </body>
 </html>
